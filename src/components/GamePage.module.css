@@ -1,0 +1,70 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameContainer {
+  padding: 0 3rem;
+}
+.gameHeader {
+  width: 100%;
+
+  display: flex;
+  direction: column;
+  justify-content: space-between;
+}
+.scoreCard {
+  font-size: 4rem;
+}
+.buttons {
+  position: relative;
+  display: flex;
+  height: 100%;
+  padding: 1.9rem 1.9rem;
+  gap: 1.5rem;
+}
+.btnNumber {
+  border: 2px solid black;
+  width: 4rem;
+  font-size: 1.3rem;
+}
+.para {
+  position: absolute;
+  top: 6rem;
+  right: 80px;
+}
+
+/* for the dice container  */
+.diceContainer {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resetDice {
+  width: 10rem;
+  border-radius: 0.3rem;
+  height: 2rem;
+  background-color: white;
+  color: black;
+}
+
+.showRules {
+  width: 10rem;
+  border-radius: 0.3rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.reset {
+  margin-bottom: 1.5rem;
+}
+.para1 {
+  margin-bottom: 1.5rem;
+}

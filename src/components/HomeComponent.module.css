@@ -1,0 +1,26 @@
+.mainSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.imageComponent {
+  width: 60%;
+}
+
+.gameLogo {
+  width: 50%;
+  position: relative;
+}
+
+.GameName {
+  font-size: 6rem;
+  font-weight: 900;
+  white-space: no;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4rem;
+}
