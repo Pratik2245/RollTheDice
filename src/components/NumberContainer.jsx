@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import style from "./GamePage.module.css";
-const NumberContainer = ({ setCurrentDice, currentDice }) => {
+const NumberContainer = ({
+  setScore,
+  roleDice,
+  currentDice,
+  setRules,
+  rules,
+}) => {
   // const [currentDice, setCurrentDice] = useState(0);
-  const getRandomInteger = (min, max) => {
-    const random = Math.floor(Math.random() * (max - min + 1)) + min;
-    console.log(random);
-    return random;
+  const handleResetScore = () => {
+    setScore(0);
   };
-
-  const roleDice = () => {
-    const random = getRandomInteger(1, 6);
-    setCurrentDice(random);
-  };
-
   return (
     <div className={style.diceContainer}>
       <div className="diceImage" onClick={roleDice}>
@@ -22,10 +20,17 @@ const NumberContainer = ({ setCurrentDice, currentDice }) => {
         <p>Click On Dice To Roll</p>
       </div>
       <div className={style.reset}>
-        <button className={style.resetDice}>Reset Score</button>
+        <button className={style.resetDice} onClick={handleResetScore}>
+          Reset Score
+        </button>
       </div>
       <div className="rules">
-        <button className={style.showRules}>Show Rules</button>
+        <button
+          className={style.showRules}
+          onClick={() => !setRules((prev) => !prev)}
+        >
+          {rules ? "Hide" : "Show"} Rules
+        </button>
       </div>
     </div>
   );

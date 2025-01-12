@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import style from "./GamePage.module.css";
 import styled from "styled-components";
-const GameHeader = ({ setSelectedNumber, selectedNumber }) => {
+const GameHeader = ({ setSelectedNumber, selectedNumber, score }) => {
   const NumberArray = [1, 2, 3, 4, 5, 6];
   // const [selectedNumber, setSelectedNumber] = useState(0);
-  console.log(selectedNumber);
 
   return (
     <div className={style.gameHeader}>
       <div className={style.score}>
-        <p className={style.scoreCard}>0</p>
+        <p className={style.scoreCard}>{score}</p>
         <h3 style={{ marginTop: "-10px" }}>Total Score</h3>
       </div>
       <div className={style.selectNumber}>
